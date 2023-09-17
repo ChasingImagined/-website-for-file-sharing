@@ -1,0 +1,63 @@
+* {
+    margin: 0%;
+    padding: 0%;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 50px;
+    overflow-y: auto;
+  }
+  
+  .main-box {
+    background-color: rgb(182, 221, 255);
+    padding: 2%;
+    width: 50%;
+  }
+  * {
+    margin: 0%;
+    padding: 0%;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  
+  .main-box {
+    background-color: rgb(182, 221, 255);
+    padding: 2%;
+    width: 80%;
+    
+  }
+  
+  .main-box .outgoing {
+    border: 1px solid;
+    background: #344d6c;
+    margin-top: 1vh;
+    border-radius: 3%;
+    padding: 2%;
+    max-height: 400px; /* Yüksekliği belirli bir değerle sınırlayın */
+    overflow: auto; /* Yüksekliği aşıldığında kaydırma çubuğunu gösterin */
+  }
+  
+  
+  
+  
+  .main-box .outgoing .file img{
+    height: 40px;
+    width: 40px;
+  }

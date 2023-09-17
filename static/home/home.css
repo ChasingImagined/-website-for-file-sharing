@@ -1,0 +1,41 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .main-container {
+    text-align: center;
+  }
+
+ .main-container p,.button-container{
+    padding: 50px;
+
+    
+ }
+
+ .main-container p{
+   font-size:x-large;
+ }
+
+ .button-container .button{
+    border: solid 0.4vh rgb(23, 0, 49);
+    border-radius: 5vh;
+    background-color: #a4beff;
+    height: 8vh;
+    width: 15vh;
+    font-size: 2vh;
+    margin:1vh
+ }
+
+ 

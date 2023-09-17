@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="static/send/send.css">
+    </head>
+
+    <body id="message">
+
+
+        <div class=" main-box">
+
+
+            
+
+            <button type="submit" id ='button-outgoing' style="height: 40% ; width: 40%; margin-right: 10%;" onclick="window.location.href = 'http://localhost:8080/senting';">giden</button>
+            <button type="submit" id='button-ingoing' style="height:40% ; width: 40%; " onclick ="window.location.href = 'http://localhost:8080/coming';">gelen</button>
+
+
+            <form id="form"  method="POST" style="padding-top: 2%;">
+                
+                <label for="recipient-name" id="label-recipient-name">alıcı Adı:</label>
+                <input type="text" id="recipient-name" name="recipient-name" required><br><br>
+        
+                <label for="message" id ='label-message'>Metin Girişi:</label><br>
+                <textarea id="message-txt" name="message" required style="min-height: 50vh; min-width:100%;"></textarea><br><br>
+        
+                <label for="file" id ='label-file'>Dosya Yükle:</label>
+                <input type="file" id="file" name="file" multiple><br><br>
+                <progress id="progressBar" value="0" max="100"></progress>
+                <input type="button" id='button-submint' value="Gönder" onclick="start()" >
+            </form>
+
+
+
+
+
+
+        </div>
+
+
+
+        <script src ="static/langues.js"></script>
+        <script src="static/send/send.js" ></script>
+       
+    </body>
+
+</html>

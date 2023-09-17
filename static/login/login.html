@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="static/login/login.css">
+    <style>
+  
+      
+      select {
+          padding: 10px;
+          font-size: 16px;
+      }
+      
+      button {
+          padding: 10px 20px;
+          background-color: #007BFF;
+          color: #fff;
+          border: none;
+          cursor: pointer;
+      }
+      
+      button:hover {
+          background-color: #0056b3;
+      }</style>
+
+
+  </head>
+
+  <body>
+
+
+
+ 
+
+
+    <div class="login-container">
+
+
+      <form id="language-form">
+        <label for="language-select">A あ :</label>
+        <select id="language-select">
+          <option value=''></option>
+            <option value='en'>English</option>
+            <option value='es'>Español</option>
+            <option value="fr">Français</option>
+            <option value="de">Deutsch</option>
+            <option value="tr">Türkçe</option>
+            <option value="ru">Русский</option>
+            <option value="zh">中国人</option>
+            <option value="ja">日本語</option>
+            <option value="ko">한국인</option>
+        </select>
+        <button type="submit">✓</button>
+    </form>
+    
+  
+
+      <h2 id='h_login'>Giriş Yap</h2>
+      <div class="form-group">
+        <label id="label-username" for="username">Kullanıcı Adı:</label>
+        <input type="text" id="username" name="username" placeholder="Kullanıcı adınızı girin">
+      </div>
+      <div class="form-group">
+        <label for="password" id='label_password'>Parola:</label>
+        <input type="password" id="password" name="password" placeholder="Parolanızı girin">
+      </div>
+      <div class="form-group">
+        <button id ='button_login' type="submit" onclick="login()">Giriş Yap</button>
+        
+        <button id = 'button_register' type="submit" style="margin-top: 10px;" onclick="window.location.href = 'http://localhost:8080/registers';">Kayıt ol</button>
+      </div>
+    </div>
+<script>
+  
+const languageSelect = document.getElementById('language-select');
+const selectedLanguage = document.getElementById('selected-language');
+
+languageSelect.addEventListener('change', function () {
+    const selectedValue = languageSelect.value;
+    const selectedText = languageSelect.options[languageSelect.selectedIndex].text;
+    SetLangue(selectedValue);
+});
+
+
+
+</script>
+    <script src="static/langues.js"></script>
+    <script src="static/login/login.js"></script>
+  </body>
+  
+</html>
